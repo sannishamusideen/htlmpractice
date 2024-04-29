@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Tags</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <hgroup>
+      <h1>Hello World</h1>
+      <h2>Hello World</h2>
+      <h3>Hello World</h3>
+      <h4>Hello World</h4>
+      <h5>Hello World</h5>
+      <h6>Hello World</h6>
+    </hgroup>
+
+    <dl>
+      <dt>Production</dt>
+      <dd>
+        The action of making or manufacturing from components or raw materials,
+        or the process of being so manufactured.
+      </dd>
+      <dt>Manufacturing</dt>
+      <dd>
+        Manufacturing is processing raw materials or parts into finished goods
+        through the use of tools, human labor, machinery, and chemical
+        processing
+      </dd>
+      <dd>
+        Manufacturing allows businesses to sell finished products at a higher
+        cost than the value of the raw materials used.
+      </dd>
+    </dl>
+
+    <blockquote>Hello World</blockquote>
+
+    <pre>How are you ?</pre>
+    <pre>Where are you going ?</pre>
+
+    <h1>Tables</h1>
+    <h2>Loverboy Stats</h2>
+    <table>
+      <thead>
+        <th>Season</th>
+        <th>Goals</th>
+        <th>Assits</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>2009-2010</th>
+          <td>25</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td colspan="3">2009-2010 - Also played for Canada at Olympics</td>
+        </tr>
+        <tr>
+          <th>2010-2011</th>
+          <td>30</td>
+          <td>44</td>
+        </tr>
+        <tr>
+          <th>2011-2012</th>
+          <td>20</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <th>2012-2013</th>
+          <td>35</td>
+          <td>53</td>
+        </tr>
+        <tr>
+          <th>2014-2015</th>
+          <td>28</td>
+          <td>49</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th>Total</th>
+        <td>100</td>
+        <td>150</td>
+      </tfoot>
+    </table>
+
+    <h1>Creating Form</h1>
+    <form action="">
+      <p>
+        <label for=""
+          >Customer name:
+          <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            maxlength="20"
+            placeholder="What is your name?"
+          />
+        </label>
+      </p>
+
+      <fieldset>
+        <legend>Pizza Size</legend>
+        <p>
+          <label for=""
+            ><input type="radio" name="size" value="small" />Small
+            (10inch)</label
+          >
+        </p>
+
+        <p>
+          <label for=""
+            ><input type="radio" name="size" value="medium" />Medium
+            (12inch)</label
+          >
+        </p>
+
+        <p>
+          <label for=""
+            ><input type="radio" name="size" value="large" />Large
+            (14inch)</label
+          >
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza Toppings</legend>
+        <p>
+          <label for=""
+            ><input type="checkbox" name="toppings" value="bacon" />Bacon</label
+          >
+        </p>
+        <p>
+          <label for=""
+            ><input
+              type="checkbox"
+              name="toppings"
+              value="chesse"
+            />Chesse</label
+          >
+        </p>
+        <p>
+          <label for=""
+            ><input type="checkbox" name="toppings" value="onion" />Onion</label
+          >
+        </p>
+        <p>
+          <label for=""
+            ><input
+              type="checkbox"
+              name="toppings"
+              value="mushroom"
+            />Mushroom</label
+          >
+        </p>
+      </fieldset>
+
+      <p>
+        Crust
+        <select name="crust" id="">
+          <option value="c1">Normal</option>
+          <option value="c2">Chicago Deep Dish (+ $2)</option>
+          <option value="c3">New York Thin</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="">Delivery Instructions:</label>
+        <textarea name="comments" id="" cols="50" rows="5" maxlength="1000">
+How do we get to your house?</textarea
+        >
+      </p>
+
+      <p>
+        <input type="submit" value="Continue to step 2" />
+      </p>
+      <p><input type="reset" value="Reset Values" /></p>
+
+      <h2>Email</h2>
+      <p>
+        <label for=""
+          ><span>Email Input: </span
+          ><input type="email" name="emailInput" required
+        /></label>
+      </p>
+      <h2>Telephone</h2>
+      <p>
+        <label for=""
+          ><span>Telephone Input: </span
+          ><input type="tel" name="TelInput" required
+        /></label>
+      </p>
+
+      <h2>Url</h2>
+      <p>
+        <label for=""
+          ><span>URL Input: </span><input type="url" name="urlInput" required
+        /></label>
+      </p>
+      <h2>Numeric Values</h2>
+      <p>
+        <label for=""
+          ><span>Number Input: </span
+          ><input type="number" name="numberInput" required
+        /></label>
+      </p>
+
+      <p>
+        <label for=""
+          ><span>Range Input: </span
+          ><input type="range" name="rangeInput" required value="42" /></label
+        >Value set to 42. By default, values between 0 and 100
+      </p>
+
+      <h2>Data List</h2>
+      <p>
+        <label for=""
+          ><span>Data List: </span>
+          <input type="text" list="someList" id="someList" />
+          <option label="First" value="First"></option>
+          <option label="Second" value="Second"></option>
+          <option label="Third" value="Third"></option>
+        </label>
+      </p>
+
+      <h2>Attributes</h2>
+      <p>
+        <label for=""
+          ><span>Autofocus: </span><input type="text" autofocus
+        /></label>
+      </p>
+      <p>
+        <label for=""
+          ><span>Pattern: </span><input type="text" pattern="^\d{5} (-/d{4})?$"
+        /></label>
+        Hint: Use a valid/invalid zip code
+      </p>
+      <p><label for=""><span>Placeholder: </span><input type="text" placeholder="Hello World"></label></p>
+      <p><label for=""><span>Required: </span><input type="text" required></label></p>
+      <p><label for=""><span>Step: </span><input type="number step=5"></label> Hint: Must be divisible by 5</p>
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
