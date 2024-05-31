@@ -78,3 +78,9 @@ span[title$="idea"] {
 p{
   background-attachment: fixed;
 }
+
+.standout {
+  color: red;
+  text-align: right;
+  font-size: 20px;
+}
